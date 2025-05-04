@@ -6,7 +6,7 @@ const details = require('./basic-details/controllers');
 const lists = require('./todo-lists/controllers');
 var cors = require('cors')
 const prefix = config.ROUTE_PREFIX;
-const hostname = '127.0.0.1';
+const hostname = 'localhost';
 const port = 3001;
 app.use(express.json());
 var corsOptions = {
