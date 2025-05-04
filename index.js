@@ -30,35 +30,35 @@ app.get(prefix+"/getData",async (req,res)=>{
     res.send(msg)
  })
 
-app.get(prefix+"/count",async (req,res)=>{
-    var output = await details.getCount(req);
-    res.status(200).send(output);
-})
+// app.get(prefix+"/count",async (req,res)=>{
+//     var output = await details.getCount(req);
+//     res.status(200).send(output);
+// })
 
-app.get(prefix+"/getAllTasks",async (req,res)=>{
-    var output = await lists.getAllTasks(req,res);
-    res.status(200).send(output);
-})
+// app.get(prefix+"/getAllTasks",async (req,res)=>{
+//     var output = await lists.getAllTasks(req,res);
+//     res.status(200).send(output);
+// })
 
-app.put(prefix+"/updateTask/:id",async (req,res)=>{
-    var output = await lists.updateTask(req,res);
-    res.status(200).send(output);
-})
+// app.put(prefix+"/updateTask/:id",async (req,res)=>{
+//     var output = await lists.updateTask(req,res);
+//     res.status(200).send(output);
+// })
 
-app.post(prefix+"/addTask",async (req,res)=>{
-    var output = await lists.addTask(req,res);
-    res.status(200).send(output);
-})
+// app.post(prefix+"/addTask",async (req,res)=>{
+//     var output = await lists.addTask(req,res);
+//     res.status(200).send(output);
+// })
 
-app.put(prefix+"/deleteTask",async (req,res)=>{
-    var output = await lists.deleteTask(req,res);
-    res.status(200).send(output);
-})
+// app.put(prefix+"/deleteTask",async (req,res)=>{
+//     var output = await lists.deleteTask(req,res);
+//     res.status(200).send(output);
+// })
 
-app.post(prefix+"/deleteAllTask",async (req,res)=>{
-    var output = await lists.deleteAllTask(req,res);
-    res.status(200).send(output);
-})
+// app.post(prefix+"/deleteAllTask",async (req,res)=>{
+//     var output = await lists.deleteAllTask(req,res);
+//     res.status(200).send(output);
+// })
 
 
 // const dbConnect = require('./postgresdb');
